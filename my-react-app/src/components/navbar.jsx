@@ -8,27 +8,30 @@ export default function Navbar() {
     <header className="bg-purple-700 text-white">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-white rounded-md" />
-          <span className="font-semibold text-lg">Untitled UI</span>
-        </div>
+        {/* Logo and Desktop Menu Container */}
+        <div className="flex items-center gap-8">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-white rounded-md" />
+            <span className="font-semibold text-lg">Untitled UI</span>
+          </div>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-6">
-          <li>
-            <a href="#" className="hover:text-gray-200 transition">Home</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-gray-200 transition">Products</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-gray-200 transition">Resources</a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-gray-200 transition">Pricing</a>
-          </li>
-        </ul>
+          {/* Desktop Menu - Now on the left side next to logo */}
+          <ul className="hidden md:flex items-center gap-6">
+            <li>
+              <a href="#" className="hover:text-gray-200 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-200 transition">Products</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-200 transition">Resources</a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-200 transition">Pricing</a>
+            </li>
+          </ul>
+        </div>
 
         {/* Desktop Right side buttons */}
         <div className="hidden md:flex items-center gap-4">
